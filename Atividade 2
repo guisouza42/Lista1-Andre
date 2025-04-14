@@ -28,7 +28,7 @@ public class Calculo {
         double totalSemIPI = (valorUm * quantidadeUm) + (valorDois *quantidadeDois);
         double totalComIPI = totalSemIPI * (1 + ipi / 100);
 
-        System.out.printf("Valor total a ser pago com IPI é R$ ", totalComIPI ,".");
+        System.out.printf("Valor total a ser pago com IPI é R$ "+ totalComIPI +".");
 
         scanner.close();
     }
