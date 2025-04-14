@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Numero {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        int antecessor = numero - 1;
+        int sucessor = numero + 1;
+
+        if (numero % 2 == 0){
+            System.out.print("O número é par.");
+        } else {
+            System.out.print("O numero é ímpar");
+        }
+
+        System.out.println("");
+
+        System.out.println("O seu antecessor é: " + antecessor + ".");
+        System.out.println("Seu sucessor é: " + sucessor + ".");
+
+        scanner.close();
+    }
+}
