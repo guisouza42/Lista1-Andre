@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SalarioMinimo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor do salário mínimo atual (R$): ");
+        double salarioMinimo = scanner.nextDouble();
+
+        System.out.print("Digite o valor do seu salário (R$): ");
+        double salarioUsuario = scanner.nextDouble();
+
+        double quantidadeSalarios = salarioUsuario / salarioMinimo;
+
+        System.out.printf("Você ganha aproximadamente "+ quantidadeSalarios +" salários mínimos.");
+
+        scanner.close();
+    }
+}
