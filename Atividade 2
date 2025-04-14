@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Calculo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a porcentagem do IPI: ");
+        double ipi = scanner.nextDouble();
+
+        System.out.print ("");
+
+        System.out.print("Digite o código da 1ª peça: ");
+        int codigoUm = scanner.nextInt();
+        System.out.print("Digite o valor unitário da 1ª peça: ");
+        double valorUm = scanner.nextDouble();
+        System.out.print("Digite a quantidade da 1ª peça: ");
+        int quantidadeUm = scanner.nextInt();
+
+        System.out.print ("");
+
+        System.out.print("Digite o código da 2ª peça: ");
+        int codigoDois = scanner.nextInt();
+        System.out.print("Digite o valor unitário da 2ª peça: ");
+        double valorDois = scanner.nextDouble();
+        System.out.print("Digite a quantidade da 2ª peça: ");
+        int quantidadeDois = scanner.nextInt();
+
+        double totalSemIPI = (valorUm * quantidadeUm) + (valorDois *quantidadeDois);
+        double totalComIPI = totalSemIPI * (1 + ipi / 100);
+
+        System.out.printf("Valor total a ser pago com IPI é R$ ", totalComIPI ,".");
+
+        scanner.close();
+    }
+}
